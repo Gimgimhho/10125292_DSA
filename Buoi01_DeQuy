@@ -1,0 +1,140 @@
+using System;
+
+class Bai1
+{
+    
+    static long TinhS1_DeQuy(int n)
+    {
+        if (n == 1) return 1;
+        return TinhS1_DeQuy(n - 1) + (long)n;
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        int n = int.Parse(Console.ReadLine());
+        long S1 = TinhS1_DeQuy(n);
+        Console.WriteLine($"S1 = {S1}");
+    }
+}
+using System;
+
+class Bai2
+{
+    static double TinhS2_DeQuy(long n)
+    {
+        if (n == 1) return 1.0;
+        return TinhS2_DeQuy(n - 1) + (double)(n * n);
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        long n = long.Parse(Console.ReadLine());
+        double S2 = TinhS2_DeQuy(n);
+        Console.WriteLine($"S2 = {S2}");
+    }
+}
+
+using System;
+class Bai3
+{
+    static long TinhS3_DeQuy(int n)
+    {
+        if (n == 1) return 1;
+        return TinhS3_DeQuy(n - 1) + 1/(long)n;
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        int n = int.Parse(Console.ReadLine());
+        long S3 = TinhS3_DeQuy(n);
+        Console.WriteLine($"S3 = {S3}");
+    }
+}
+using System;
+class Bai4
+{
+    static double TinhS4_DeQuy(double x, double n)
+    {
+        if (n==0) return 1;
+        return TinhS4_DeQuy(x, n-1) + Math.Pow(x, n);
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap x: ");
+        double x = double.Parse(Console.ReadLine());
+        Console.Write("Nhap n: ");
+        double n = double.Parse(Console.ReadLine());
+        double S4 = TinhS4_DeQuy(x, n);
+        Console.WriteLine($"S4 = {S4}");
+    }
+}
+using System;
+class Bai5
+{
+    static int UocLeMax(int n)
+    {
+        if ( n % 2 == 1) return n;
+        return UocLeMax(n / 2);
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        int n = int.Parse(Console.ReadLine());
+        int uocLeMax = UocLeMax(n);
+        Console.WriteLine($"Uoc le max cua {n} la: {uocLeMax}");
+    }
+}
+using System;
+class bai6
+{
+    static long UocChungLonNhat(long a, long b)
+    {
+        if (a % b == 0) return b;
+        return UocChungLonNhat(b, a % b);
+    }
+    class Bai6
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Nhap a: ");
+            long a = long.Parse(Console.ReadLine());
+            Console.Write("Nhap b: ");
+            long b = long.Parse(Console.ReadLine());
+            long ucln = UocChungLonNhat(a, b);
+            Console.WriteLine($"UCLN({a}, {b}) = {ucln}");
+        }
+    }
+}
+
+using System;
+class Bai7
+{
+    static long DemSoChuSo(int n)
+    {
+        if (n == 0) return 0;
+        return DemSoChuSo(n / 10) + 1;
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        int n = int.Parse(Console.ReadLine());
+        long soChuSo = DemSoChuSo(n);
+        Console.WriteLine($"So chu so cua {n} la: {soChuSo}");
+    }
+}
+using System;
+class Bai8
+{
+    static double TinhTongCan(int n, int i = 1)
+    {
+        if (i == n) return Math.Sqrt(n);
+        return Math.Sqrt(i + TinhTongCan(n, i + 1));
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap n: ");
+        int n = int.Parse(Console.ReadLine());
+        double tongCan = TinhTongCan(n);
+        Console.WriteLine($"Tong can bac hai cua {n} la: {tongCan}");
+    }
+}
