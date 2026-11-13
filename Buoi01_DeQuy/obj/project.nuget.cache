@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CCyEBMf6kV0=",
+  "success": true,
+  "projectFilePath": "D:\\Cấu trúc dữ liệu giải thuật\\Buổi 1\\Buoi01_DeQuy\\Buoi01_DeQuy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GIANG MINH THUY\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\10.0.15\\microsoft.windowsdesktop.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\GIANG MINH THUY\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.15\\microsoft.netcore.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\GIANG MINH THUY\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\10.0.15\\microsoft.aspnetcore.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\GIANG MINH THUY\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\10.0.15\\microsoft.netcore.app.host.win-x64.10.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
